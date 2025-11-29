@@ -1,4 +1,4 @@
-.item{
+.item {
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -9,43 +9,59 @@
     scroll-snap-align: start;
 }
 
-.item__container{
-width: 40vw;
-display: flex;
-flex-direction: column;
-align-items: center;
+.item__container {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.item__text{
-font-weight: 500;
-margin-top: 20%;
-display: flex;
-flex-direction: column;
-font-size: 40px;
-color:  #393C41;
-align-items: center;
-flex: 1;
+.item__text {
+    font-weight: 500;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: #393C41;
+    align-items: center;
+    flex: 1;
+    text-align: center;
 }
 
-.item__textDesc{
+.item__textDesc {
     font-weight: 400;
     font-size: 14px;
     color: #171a20;
 }
 
-.item__lowerThird{
+.item__lowerThird {
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
 }
 
-.item__buttons{
+.item__buttons {
     display: flex;
 }
 
-.item__expand{
+.item__expand {
     color: white;
     width: 100%;
     margin-top: 3%;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .item__container {
+        width: 90vw;
+    }
+
+    .item__buttons {
+        flex-direction: column;
+    }
+
+    .item__text {
+        font-size: 30px;
+        margin-top: 30%;
+    }
 }
